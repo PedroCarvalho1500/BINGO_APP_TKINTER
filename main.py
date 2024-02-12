@@ -50,7 +50,6 @@ class Application():
         else:
             while(self.current_number in self.drawn_numbers_labels or self.at_least_one_drawn == False):
                 self.current_number = random.randint(1,90)
-                self.current_number = random.randint(1,90)
                 self.at_least_one_drawn = True
 
             self.canvas.itemconfig(self.canvas_text, text=str(self.current_number), font=('Arial', 75, "bold"))
